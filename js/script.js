@@ -29,7 +29,8 @@ const loadData = async() => {
     let weather_current = weather.current;
     console.log(weather_location);
     console.log(weather_current);
-    createList(weather_location.name, weather_current.temp_f, weather_current.feelslike_f, weather_current.humidity)
+    console.log(weather_current.condition.text);
+    createList(weather_location.name, weather_current.temp_f, weather_current.feelslike_f, weather_current.humidity, weather_current.condition.text);
 }
 
 const DOM_Elements = {
@@ -37,12 +38,15 @@ const DOM_Elements = {
     weather_image: '.weather-image'
 }
 
-const createList = (city, current, feels_like, humidity) => {
+const createList = (city, current, feels_like, humidity, condition) => {
     const html = `<div class="card">
         <ul class="list-group list-group-flush">
         <li class="list-group-item"><h2>${city} ${Math.floor(current)}°F</h2></li>
-        <li class="list-group-item"><b>Feels like:</b> ${feels_like}</li>
+        <li class="list-group-item"><b>Condition:</b> ${condition}</li>
+        <li class="list-group-item"><b>Feels like:</b> ${feels_like} °F</li>
         <li class="list-group-item"><b>Humidity:</b> ${humidity}%</li>
+        
+
         </ul>
     </div>
     <br>`
