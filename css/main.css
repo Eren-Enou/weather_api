@@ -1,0 +1,103 @@
+body {
+    font-family:raleway;
+    background-image: url('/images/clouds.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body h1 {
+    color:#000000;
+    font-weight: 600;
+    font-size:3.2rem;
+}
+
+.container {
+    width: 40%;
+    margin-top:2vh;
+    margin-left:25vh;
+    display:flex;
+}
+
+#city_name {
+    width:75%;
+    margin:0.5vh;
+    color: #000000;
+    background-color: hsl(210,57%,48%);
+    border: 3px solid #000000;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+#zip_code {
+    width:75%;
+    margin:0.5vh;
+    color: #000000;
+    background-color: hsl(210,57%,48%);
+    border: 3px solid #000000;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+.get-data {
+    width: 60%;
+    color:rgb(0, 0, 0);
+    background-color: hsl(240,14%,87%);
+    margin:1vh 0.5vh 0.5vh 0.5vh;
+    border-radius:7px;
+    padding:0.5vh 0;
+    border: 3px solid #000000;
+    font-size: 1.1rem;
+}
+
+.clear-data {
+    width: 60%;
+    color:rgb(0, 0, 0);
+    background-color: hsl(240,14%,87%);
+    margin:0vh 0.5vh 0.5vh 0.5vh;
+    border-radius:7px;
+    padding:0.5vh 0;
+    border: 3px solid #000000;
+    font-size: 1.1rem;
+}
+
+.weather-image {
+    margin-bottom:1vh;
+    border-radius: 10px;
+}
+
+.list-group h2 {
+    font-weight:600;
+    font-size:2.5rem;
+    background-color: #000;
+    line-height: 75%;
+    margin-top:1vh;
+}
+
+.list-group-item, .list-group {
+    background-color: #000;
+    color:#ddd;
+    line-height:75%;
+}
+
+#weatherSearchForm {
+    display:flex;
+    flex-direction: column;
+}
+
+.center {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    /* transform: translate(-50%, -50%); */
+}
